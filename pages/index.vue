@@ -1,15 +1,14 @@
 <template>
-  <chart :chart-data="chartData" />
+  <chart v-if="chartData" :chart-data="chartData" />
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
 
 export default Vue.extend({
   name: 'IndexPage',
   data: () => ({
     chartData: null,
-    chart: null,
   }),
   async fetch() {
     this.chartData = await this.$axios.$get(

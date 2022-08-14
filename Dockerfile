@@ -11,7 +11,6 @@ RUN apk update && apk upgrade
 # copy the app, note .dockerignore
 COPY package.json ./app
 COPY . /app
-RUN ls
 
 RUN npm install 
 RUN npm run build
