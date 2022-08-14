@@ -1,13 +1,15 @@
 # imd-chart-demo
+## run tests
+npm run test
 
 ## development setup
 
 ```bash
 # install dependencies
-$ yarn install
+$ npm install
 
 # serve with hot reload at localhost:3000
-$ yarn dev
+$ npm run dev
 ```
 ## production setup
 ```bash
